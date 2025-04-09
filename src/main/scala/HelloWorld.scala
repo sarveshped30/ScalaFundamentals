@@ -28,5 +28,10 @@ def main(): Unit = {
 
   println("Age of " + name + " is " + age);
 
+  val designation : String = "I am a \"Software Engineer\"";
+
+  println(designation);
+
+
 }
 
