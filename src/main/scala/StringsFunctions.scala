@@ -19,4 +19,12 @@ def stringFunctions(): Unit = {
   println(s"My Pet name is $myPet");
   println(s"My Pet name is ${myPet.split(" ").head} and surname is ${myPet.split(" ").tail.head}");
 
+  //Pipe are the margin, not necessary to add (its optional)
+  //.stripMargin at end trims any char before '|'
+  println("""
+      |Hello i am trying multiLine String
+      |Its awesome feature
+      |This feature is available in java as well
+      """.stripMargin)
+
 }
