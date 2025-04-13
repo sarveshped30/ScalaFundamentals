@@ -14,4 +14,19 @@ def typeConversion(): Unit = {
 
   val num3 = num1 * num2
   println(s"product result of two is $num3 & it's type is ${num3.getClass}")
+
+  /** if range overflow while casting to lower type, its does not throw exception,
+   *  except it gives son random garbage value
+   *
+   * Recommended to check before using with isValidInt, isValidFloat, isValidByte etc. like fucntions
+   */
+
+  /*  val d: Long = 3458924889l
+  val i = d.toInt
+  println(d.isValidInt)
+  println(i)*/
+
+/*  val cat = 4;
+  println(cat.getClass)
+  println(cat.toString.getClass)*/
 }
