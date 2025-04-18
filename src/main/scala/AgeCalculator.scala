@@ -14,7 +14,7 @@ def ageCalculator() : Unit = {
 
   } catch {
     case _: NumberFormatException => println("Please enter a valid number for birth year.");
-    case _: Exception => println("Unable to calculate age due to invalid input") ;
+    case _: Exception => println("Unable to calculate age due to invalid input");
   }
 
 }
