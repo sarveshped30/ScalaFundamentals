@@ -17,4 +17,12 @@ def arrayBuffer(): Unit = {
   customers.remove(customers.indexOf("Sarvesh"))
   println(customers)
 
+  val items = ArrayBuffer[String]("laptop", "mouse", "pen", "paper", "mug", "phone")
+  println(items)
+
+  val removedItems = ArrayBuffer[String]("pen", "paper", "mug", "phone")
+
+  items --= removedItems
+  println(items)
+
 }
