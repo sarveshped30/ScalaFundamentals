@@ -2,6 +2,8 @@ package collections
 
 import scala.collection.mutable
 
+
+//Set is immutable , HashSet is mutable
 @main
 def set(): Unit = {
 
