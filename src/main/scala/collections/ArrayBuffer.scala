@@ -25,4 +25,16 @@ def arrayBuffer(): Unit = {
   items --= removedItems
   println(items)
 
+  val zoo = ArrayBuffer[String]("lion", "zebra", "chimp", "elephant")
+  println(zoo)
+
+  zoo.addOne("panda")
+  println(zoo.toList)
+
+  zoo.remove(zoo.indexOf("lion"))
+  println(zoo)
+
+  val hasElephantsAnGiraffes = zoo.contains("elephant") && zoo.contains("giraffes")
+  println(s"Does the zoo have both elephant and giraffes? : $hasElephantsAnGiraffes")
+
 }
