@@ -24,4 +24,10 @@ def map(): Unit = {
   } else {
     println(s"Attendance for 22 sept is ${attendance("22/09")}")
   }
+
+  val hashMap = mutable.HashMap[String, Int]("sarvesh" -> 2345, "romil" -> 3456)
+  println(hashMap)
+  hashMap.addOne("vardam" -> 4567)
+  hashMap.put("sarvesh", 67846)
+  println(hashMap)
 }
