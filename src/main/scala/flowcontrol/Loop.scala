@@ -1,8 +1,9 @@
 package flowcontrol
 
+import scala.collection.mutable.ArrayBuffer
 import scala.io.StdIn
 
-@main
+//@main
 def emojiSquareMatrix(): Unit = {
 
   print(s"Enter a number : ")
@@ -18,5 +19,28 @@ def emojiSquareMatrix(): Unit = {
         case 2 => print("\uD83D\uDE31\t")
 
     println()
+
+}
+
+@main
+def addUsername(): Unit = {
+
+  val users = ArrayBuffer("sarvesh", "romil", "tambade")
+  var added = false
+
+  while(!added) {
+    print("Enter username : ")
+    val name = StdIn.readLine()
+    println()
+    if(!users.contains(name)) {
+      users.addOne(name)
+      added = true
+    } else {
+      println("Username already taken.. try another name")
+    }
+  }
+
+  println(s"User List : $users")
+
 
 }
