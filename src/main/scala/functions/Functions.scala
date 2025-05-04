@@ -3,7 +3,7 @@ package functions
 import scala.io.StdIn
 
 @main
-def init(): Unit = {
+def initF(): Unit = {
 
 /*  print("Enter animal name : ")
   val animal = StdIn.readLine()
